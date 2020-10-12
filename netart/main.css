@@ -18,6 +18,8 @@ text-align: left
     width: 700px;
     min-height:700px;
     text-align: justify;
+    padding-top: 80px;
+    z-index: -1;
 }
 .main p {
     height: 150px;

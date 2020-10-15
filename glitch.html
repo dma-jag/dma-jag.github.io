@@ -12,7 +12,11 @@
 
 <!-- Popper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -25,11 +29,12 @@
      <li class="nav-item"><a class="nav-link" href="meme.html">meme</a></li>
      <li class="nav-item"><a class="nav-link" href="minecraft.html">minecraft</a></li>
      <li class="nav-item"><a class="nav-link" href="3d.html">3d-print</a></li>
-     <li class="nav-item"><a class="nav-link" href="netart/netart.html">net-art</a></li>
+     <li class="nav-item"  data-toggle="tooltip" data-placement="bottom" title="The purpose of this project was to create a series of pages around a story/topic/experience. I created a choose your own adventure style series where the user can choose a path during the covid pandemic."><a class="nav-link" href="netart/netart.html">net-art</a></li>
      <li class="nav-item"><a class="nav-link" href="code-as-art.html">code art</a></li>
 </ul> 
 </nav>
-    
+
+
 <body>
 <div class="content">
 <h1>GLITCH IMAGES</h1>

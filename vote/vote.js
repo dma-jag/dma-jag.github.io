@@ -12,9 +12,8 @@ function preload() {
 function setup() {
   createCanvas(1200, 720);
   textAlign(CENTER);
-} // end setup
-
-
+}
+// end setup
 function draw() {
   cursor('https://i.imgur.com/gjYZPJF.png');
   if (gameState=="L1"){
@@ -29,34 +28,30 @@ function draw() {
   
   text(("States Secured: " + score), width/2, 40);
   fill(255,0,0);
-
-} // end draw
-
-
+} 
+// end draw
 function levelOne(){
   background(map);
   fill(255);
-  textFont('Palatino Linotype', 30);
+  textFont('Roboto', 30);
   var distToBall= dist(ballx, bally, mouseX, mouseY);
   if (distToBall <ballSize/4){
     ballx = random(width);
     bally= random(height);
     score= score +1;
   }
-  if(score>25){
+  if(score>24){
 // call level 2
- // fill(random(255));
  gameState= "L2";
   }
-  
-  image(vote, ballx, bally, ballSize, ballSize);
-  
-  
-} // end level one
+  image(vote, ballx, bally, ballSize, ballSize); 
+} 
+// end level one
 
 function levelTwo(){
   background(map);
-  textFont('Palatino Linotype', 30);
+  fill(255,0,0);
+  textFont('Roboto', 30);
   var distToBall= dist(ballx, bally, mouseX, mouseY);
   if (distToBall <ballSize/2){
     ballx = random(width);
@@ -70,11 +65,11 @@ function levelTwo(){
   
 //  line(ballx, bally, mouseX, mouseY);
   image(vote, ballx, bally, ballSize, ballSize);
-} // end level two
-
+} 
+// end level two
 function endScreen(){ // win game
   background(map);
   fill(255);
   text("Biden is the NEW President of the United States", width/2, height-100);
-  textFont('Palatino Linotype', 25);
+  textFont('Roboto', 25);
 }

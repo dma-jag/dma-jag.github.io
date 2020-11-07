@@ -1,14 +1,52 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>code as art - jose</title>
+<link rel="stylesheet" href="../style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
-  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
-  <script language="javascript" type="text/javascript" src="vote.js"></script>
-  <style> body { padding: 0; margin: 0; } </style>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-
+    
+<nav class="navbar navbar-expand-sm bg-dark justify-content-center fixed-top links" id="shadow">
+ <ul class="navbar-nav">
+     <li class="nav-item"><a class="nav-link" href="../index.html">home</a></li>
+     <li class="nav-item"><a class="nav-link" href="../glitch.html">glitch</a></li>
+     <li class="nav-item"><a class="nav-link" href="../meme.html">meme</a></li>
+     <li class="nav-item"><a class="nav-link" href="../minecraft.html">minecraft</a></li>
+     <li class="nav-item"><a class="nav-link" href="../3d.html">3d-print</a></li>
+     <li class="nav-item"  data-toggle="tooltip" data-placement="bottom" title="The purpose of this project was to create a series of pages around a story/topic/experience. I created a choose your own adventure style series where the user can choose a path during the covid pandemic."><a class="nav-link" href="../netart/netart.html">net-art</a></li>
+     <li class="nav-item"><a class="nav-link" href="../code-as-art.html">code art</a></li>
+     <li class="nav-item"><a class="nav-link" href="../diyps.html">diyps</a></li>
+     <li class="nav-item"><a class="nav-link" href="vote.html">game</a></li>
+</ul> 
+</nav>
+    
 <body>
+<div class="content">
+<h1>CODE AS ART</h1>
+<p>Goal of the project was to recreate this game and add a meaning over this p5.js game. This game takes the recent 2020 Election, and makes it into a search/gathering of the vote around the United States, ultimately, after gathering 5 votes, leading to a victory.</p>
+<p>
+<iframe src="game.html" width="1200" height="720" style="overflow:hidden;border-style: hidden;"></iframe>
+</p>
+</div>
+<div class="footer bg-dark">
+    <p>dma - jose gonzalez</p>
+</div>
 </body>
 </html>
